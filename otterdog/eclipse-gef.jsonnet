@@ -3,13 +3,7 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 orgs.newOrg('eclipse-gef') {
   settings+: {
     description: "",
-    members_can_change_project_visibility: false,
-    members_can_change_repo_visibility: false,
-    members_can_create_teams: false,
-    members_can_delete_repositories: false,
     name: "GEF Project",
-    packages_containers_internal: false,
-    packages_containers_public: false,
     web_commit_signoff_required: false,
     workflows+: {
       actions_can_approve_pull_request_reviews: false,
@@ -25,8 +19,6 @@ orgs.newOrg('eclipse-gef') {
       dependabot_security_updates_enabled: true,
       description: "Eclipse GEF™",
       homepage: "https://www.eclipse.org/gef/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -47,8 +39,6 @@ orgs.newOrg('eclipse-gef') {
       description: "Eclipse GEF(tm) Classic code",
       has_discussions: true,
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "eclipse",
         "gef",
