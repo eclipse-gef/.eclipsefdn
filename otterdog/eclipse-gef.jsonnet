@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-gef') {
+orgs.newOrg('tools.gef', 'eclipse-gef') {
   settings+: {
     description: "",
     name: "GEF Project",
