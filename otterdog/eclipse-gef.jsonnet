@@ -12,6 +12,7 @@ orgs.newOrg('tools.gef', 'eclipse-gef') {
   },
   _repositories+:: [
     orgs.newRepo('gef') {
+      archived: true,
       allow_merge_commit: true,
       allow_update_branch: false,
       default_branch: "master",
